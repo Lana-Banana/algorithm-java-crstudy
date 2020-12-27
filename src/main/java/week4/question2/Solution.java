@@ -24,7 +24,7 @@ class Solution {
         double a = getIntersection(map1, map2);
         double b = getUnion(map1, map2);
 
-        return jacad(a, b);
+        return jaccard(a, b);
     }
 
     private static String[] getStringArray(String origin) {
@@ -76,7 +76,7 @@ class Solution {
         return count;
     }
 
-    private static int jacad(double a, double b) {
+    private static int jaccard (double a, double b) {
         int multiply = 65536;
         if (a == 0 && b == 0) return multiply;
         double answer = (a / b) * multiply;
